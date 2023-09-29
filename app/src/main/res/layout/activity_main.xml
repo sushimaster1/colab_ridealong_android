@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootRL"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/car_background"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="269dp"
+            android:layout_marginTop="374dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="304dp"
+            android:text="Sign in"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--text view for heading-->
+    <TextView
+        android:id="@+id/idTVHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:autoSizeMaxTextSize="50sp"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="RIDE ALONG"
+        android:textAlignment="center"
+        android:textSize="45sp" />
+
+    <!--edit text for user name-->
+    <EditText
+        android:id="@+id/idEdtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVHeader"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter UserName"
+        android:textSize="25sp"
+        android:inputType="textEmailAddress" />
+
+    <!--edit text for user password-->
+    <EditText
+        android:id="@+id/idEdtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtUserName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Password"
+        android:textSize="25sp"
+        android:inputType="textPassword" />
+
+    <!--button to register our new user-->
+    <Button
+        android:id="@+id/button_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtPassword"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Login"
+        android:onClick="openhome"
+        android:textSize="25sp"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
